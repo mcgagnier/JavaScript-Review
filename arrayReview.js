@@ -2,17 +2,25 @@ var threeItems = [1,2,3];
 //create a function named 'last' that returns the last item from 'threeItems'
 //alert the result of your function
 
+function last(arr) {
+    alert(arr[2])
+    return arr[2];
+
+}
+last(threeItems)
   //code here
-
-
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
-
-//Loop through evenArray removing all values that aren't even 
+//Loop through evenArray removing all values that aren't even
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
+function odd(nums) {
+    for (var i = 0; i < arr.length; i++);
+    while (nums[i] % 2){
+        nums.splice(i, 1)};
+        console.log(nums);
+    }
   //code here
 
 
@@ -25,6 +33,19 @@ var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 }
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+
+function find(arr) {
+    var rand = getRandomArbitrary();
+    for (var i=0; i<arr.length; i++) {
+        if(arr[i] == rand){
+            alert(true);
+            break
+        }
+        alert(false);
+    }
+
+}
+
 
   //code here
 
@@ -58,7 +79,7 @@ var sentence = "Dev Mountain is the best"
 
 
 
-//write a function called capitalize that takes in the myPoem variable and capitalizes every word 
+//write a function called capitalize that takes in the myPoem variable and capitalizes every word
 var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
