@@ -56,7 +56,8 @@ function find(arr) {
 
 //Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
 var first = [1,2,3,4,5];
-var second;
+var second = first.slice();
+second.push(6,7);
 
   //code here
 
@@ -72,6 +73,18 @@ alert(second) //[1,2,3,4,5,6,7];
 //write a function called longest that takes in our sentence variable, and returns the longest word in that sentence.
 var sentence = "Dev Mountain is the best"
 
+function longest(str) {
+    var arr = str.split(' ');
+    var longestWord = 0;
+    for (var i = 0; i < arr.length; i++){
+        if(arr[i].length) > longestWord {
+            longestWord = arr[i].length;
+        }
+    }
+    returnLongestWord
+}
+longest(sentence);
+
   //code here
 
 
@@ -83,6 +96,7 @@ var sentence = "Dev Mountain is the best"
 var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
+function capitalize(str)
   //code here
 
 
